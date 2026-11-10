@@ -1,15 +1,15 @@
-const formEstilo = document.getElementById("formEstilo");
-const campoCor = document.getElementById("campoCor"):
-const campoPadding = document.getElementById("campoPadding");
-const campoTamanho = document.getElementById("campoTamanho");
-const retorno = document.getElementById("retorno");
+const formCalculo = document.getElementById("formCalculo");
+const numero1 = document.getElementById("numero1");
+const numero2 = document.getElementById("numero2");
+const resultadoCalculo = document.getElementById("resultadoCalculo");
 
-function aplicarEstilo(event){
-    event.preventDefault();
+function somar(event){
+    event.preventDefault{};
 
-    retorno.style.color = campoCor.value;
-    retorno.style.padding = campoPadding.value + "px";
-    retorno.style.fontsize = campoTamanho.value + "px";
+    const a = Number(numero1.value);
+    const b = Number(numero2.value);
+
+    resultadoCalculo.textContent = "Resultado:" + (a + b);
 }
 
-formEstilo.addEventListener("submite", aplicarEstilo);
+formCalculo.addEventListener("submit", somar):
