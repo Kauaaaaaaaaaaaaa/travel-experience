@@ -1,16 +1,30 @@
-
-.container{
+body{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
 }
-.card{
-    border: 2px solid black;
-    padding: 70px;
-    border-radius: 50px;
-    border: 2px solid black;
+.cartao{
+    width: 320px;
+    padding: 10px;
     background-color: white;
-    border-radius: 12px;
-    flex: 1;
-    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+#titulo{
+    font-size: 32px;
+    color: blue;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    font-size: 16px;
+    cursor: pointer;
 }
